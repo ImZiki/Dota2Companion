@@ -1,3 +1,5 @@
+@font-face { font-family: roboto-regular; 
+  src: url('../font/Roboto-Regular.ttf'); } 
 .blog-container {
     background: #fff;
     display: flex;
@@ -10,7 +12,7 @@ html, body {
     height: 100%; /* Asegurar que ocupen toda la altura de la ventana */
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: roboto-regular, sans-serif;
     background-color: #fff;
     display: flex;
     flex-direction: column;

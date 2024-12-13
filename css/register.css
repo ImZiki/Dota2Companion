@@ -1,0 +1,173 @@
+/* General Styles */
+html, body {
+    height: 100%; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column; /* Organiza los hijos en una columna */
+  }
+  
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinea los elementos verticalmente */
+    padding: 10px 20px;
+    background-color: #fffefe;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  header .logo-container { /* Contenedor para la imagen y el párrafo */
+    display: flex;
+    align-items: center; /* Alinea la imagen y el párrafo verticalmente */
+    gap: 10px; /* Espacio entre la imagen y el párrafo */
+  }
+  
+  header img {
+    height: 40px;
+  }
+  
+  header p {
+    font-weight: bold;
+  }
+  
+  header nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    align-self: center; /* Alinea el texto con el logo verticalmente */
+  }
+  
+  header nav a:hover {
+    color: #555;
+  }
+  
+  /* Register Section */
+  main {
+    flex: 1; /* Asegura que el contenido principal ocupe el espacio restante */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Centra el contenido verticalmente si está vacío */
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .register-title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .register-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .register-form {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .form-group {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .register-button {
+    background-color: #25E821;
+    color: #000000;
+    border: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .register-button:hover {
+    
+    background-color: #22C71F;
+  }
+
+  .register-button:focus{
+    background-color: #25E821;
+  }
+  
+  /* Footer */
+  footer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+    font-size: 14px;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .form-row {
+      flex-direction: column;
+    }
+  
+    .register-form {
+      width: 90%;
+    }
+  
+    footer {
+      flex-direction: row;
+      gap: 10px;
+    }
+  }
+  

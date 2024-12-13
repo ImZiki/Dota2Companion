@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/user-panel.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="user-panel">
+    <header class="header">
+      <div class="logo-container">
+        <a href="index.html"><img src="assets/images/logo.png" alt="Logo"></a>
+        <p>Dota2 Companion</p>
+      </div>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="up-landing.html" class="nav-link">Panel principal</a>
+        <a href="up-plan.html" class="nav-link">Cambiar Plan</a>
+        <a href="up-methods.html" class="nav-link">Metodos</a>
+        <a href="index.html" class="nav-link">Log out</a>
+      </nav>
+    </header>
+      
+      
+    </header>
+    <section class="banner">
+      <img loading="lazy" src="assets/images/icons8-dota-100.png" alt="Usuario invitado" class="banner-image">
+      <div class="banner-text">
+        <h2 class="banner-title">PedroAlfarj</h2>
+        <p class="banner-description">Bienvenido </p>
+      </div>
+    </section>
+  
+    <main class="subscription-container">
+      <form class="subscription-form-container">
+        <h2 class="form-heading">Cambiar Plan de Suscripción</h2>
+        
+        <div class="plan-selection">
+            <div class="listbox">
+                <label for="subscription-plan" class="listbox-label">Selecciona tu Subscripción</label>
+                <button type="button" class="listbox-button" id="subscription-plan" aria-haspopup="listbox" aria-expanded="false">
+                    <span>Selecciona Plan</span>
+                </button>
+                <div class="listbox-options" id="listbox-options" role="listbox" hidden>
+                    <div class="listbox-item" role="option" tabindex="0">Plan Básico</div>
+                    <div class="listbox-item" role="option" tabindex="0">Plan Estándar</div>
+                    <div class="listbox-item" role="option" tabindex="0">Plan Premium</div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="payment-section">
+            <div class="payment-form">
+                <div class="form-fields">
+                    <div class="input-group">
+                        <div class="input-wrapper">
+                            <label for="subscription-card-number" class="input-label">Número de Tarjeta</label>
+                            <input type="text" id="subscription-card-number" class="form-input" placeholder="Número de tarjeta" pattern="[0-9]*" inputmode="numeric">
+                        </div>
+                    </div>
+    
+                    <div class="input-group">
+                        <div class="input-wrapper">
+                            <label for="subscription-expiry-date" class="input-label">Fecha Caducidad</label>
+                            <input type="text" id="subscription-expiry-date" class="form-input" placeholder="MM/YY" pattern="[0-9]*" inputmode="numeric">
+                        </div>
+                    </div>
+    
+                    <div class="input-group">
+                        <div class="input-wrapper">
+                            <label for="subscription-cvv" class="input-label">CVV</label>
+                            <input type="text" id="subscription-cvv" class="form-input" placeholder="CVV" pattern="[0-9]*" inputmode="numeric" maxlength="4">
+                        </div>
+                    </div>
+                </div>
+    
+                <button type="submit" class="submit-btn">Cambiar Plan</button>
+            </div>
+        </div>
+    </form>
+    
+    </main>
+    <footer class="footer">
+      <a href="404.html" class="footer-link">Privacy Policy</a>
+      <a href="404.html" class="footer-link">Terms & Conditions</a>
+    </footer>
+</body>
+</html>
+    

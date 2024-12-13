@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+  a{
+    color: #000;
+    text-decoration: none;
+  }
+  a:visited{
+    color: #000;
+    text-decoration: none;
+  }
+  /* Header */
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinea los elementos verticalmente */
+    padding: 10px 20px;
+    background-color: #fffefe;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  header .logo-container { /* Contenedor para la imagen y el párrafo */
+    display: flex;
+    align-items: center; /* Alinea la imagen y el párrafo verticalmente */
+    gap: 10px; /* Espacio entre la imagen y el párrafo */
+  }
+  
+  header img {
+    height: 40px;
+  }
+  
+  header p {
+    font-weight: bold;
+  }
+  
+  header nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    align-self: center; /* Alinea el texto con el logo verticalmente */
+  }
+  
+  header nav a:hover {
+    color: #555;
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: 50px 150px;
+    text-align: left;
+  }
+  
+  .hero h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero button {
+    background-color: #25E821;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Alinea el botón debajo del texto */
+  }
+  .hero a{
+    text-decoration: none;
+    color: #333;
+    
+  }
+  .hero button:hover {
+    background-color: #218838;
+  }
+  .hero button:focus {
+    background-color: #22C71F;
+  }
+  /* Banner Section */
+  .banner {
+    margin: 30px 0;
+  }
+  
+  .banner img {
+    max-width: 95%;
+    align-self: center;
+    height: auto;
+    display: block;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  /* Footer */
+  footer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+    font-size: 14px;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .hero h1 {
+      font-size: 22px;
+    }
+  
+    .hero button {
+      width: 80%;
+      padding: 10px;
+    }
+  
+    footer {
+      flex-direction: row;
+      gap: 10px;
+    }
+  }

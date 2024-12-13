@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de Usuario - Dota2 Companion</title>
+  <link rel="stylesheet" href="./css/user-panel.css">
+</head>
+<body>
+  <div class="user-panel">
+    <header class="header">
+      <div class="logo-container">
+        <a href="index.html"><img src="assets/images/logo.png" alt="Logo"></a>
+        <p>Dota2 Companion</p>
+      </div>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="up-landing.html" class="nav-link">Panel principal</a>
+        <a href="up-plan.html" class="nav-link">Cambiar Plan</a>
+        <a href="up-methods.html" class="nav-link">Metodos</a>
+        <a href="index.html" class="nav-link">Log out</a>
+      </nav>
+    </header>
+    <section class="banner">
+      <img loading="lazy" src="assets/images/icons8-dota-100.png" alt="Usuario invitado" class="banner-image">
+      <div class="banner-text">
+        <h2 class="banner-title">PedroAlfarj</h2>
+        <p class="banner-description">Bienvenido </p>
+      </div>
+    </section>
+    <main class="main-content">
+
+      <div class="user-details-container">
+        <!-- Contenedor de Contact Info y Personal Info -->
+        <div class="user-details">
+            <div class="contact-info">
+                <h2 class="info-heading">Datos de contacto y plan</h2>
+                <p>Email</p>
+                <p class="email">pedroalfer@gmail.com</p>
+                <p class="plan-label">Plan actual</p>
+                <p class="plan-type">Gratuito</p>
+            </div>
+            <div class="personal-info">
+                <h2 class="info-heading">Información personal</h2>
+                <p class="name-label">Nombre</p>
+                <p class="full-name">Pedro Aljarafe Fernandez</p>
+                <p>Direccion</p> 
+                <p class="address">C/Calatrava 27</p>
+            </div>
+        </div>
+    
+        <!-- Formulario debajo de los contenedores -->
+        <form class="form-container">
+            <h2 class="form-heading">Cambia tus datos</h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="newEmail" class="form-label">Email nuevo</label>
+                    <input type="email" id="newEmail" class="form-input" placeholder="Introduce tu nuevo email" required>
+                </div>
+                <div class="form-group">
+                    <label for="newPassword" class="form-label">Contraseña nueva</label>
+                    <input type="password" id="newPassword" class="form-input" placeholder="Introduce nueva contraseña" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="confirmEmail" class="form-label">Confirmar email nuevo</label>
+                    <input type="email" id="confirmEmail" class="form-input" placeholder="Introduce tu nuevo email" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword" class="form-label">Confirmar contraseña nueva</label>
+                    <input type="password" id="confirmPassword" class="form-input" placeholder="Confirma la nueva contraseña" required>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Confirmar</button>
+        </form>
+    </div>
+    
+    </main>
+  </div>
+  <footer class="footer">
+    <a href="404.html" class="footer-link">Privacy Policy</a>
+    <a href="404.html" class="footer-link">Terms & Conditions</a>
+  </footer>
+</body>
+</html>

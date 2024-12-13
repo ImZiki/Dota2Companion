@@ -1,0 +1,546 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Links */
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fffefe;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header img {
+    height: 40px;
+}
+
+header p {
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #555;
+}
+
+main {
+    flex: 1; /* Ocupa el espacio disponible */
+    display: flex;
+    justify-content: center; /* Centra contenido horizontalmente */
+    align-items: flex-start; /* Alinea al inicio del contenedor */
+    padding-top: 30px; /* Espacio adicional entre la parte superior y el formulario */
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+    font-size: 14px;
+    width: 100%;
+    margin-top: auto; /* Esto asegura que el pie de página se quede al fondo */
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* USER PANEL STYLES */
+/* Banner Section */
+.banner {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #d9534f;
+    color: #fff;
+}
+
+.banner-image {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.banner-text {
+    text-align: left;
+}
+
+.banner-title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.banner-description {
+    margin: 5px 0 0;
+}
+
+/* Main Content */
+.user-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+}
+
+.contact-info,
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    max-width: 500px;
+}
+
+.contact-info p,
+.personal-info p {
+    text-align: left;
+}
+
+/* Formulario de landing*/
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-heading {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-heading::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #25e821;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-label {
+    font-size: 14px;
+    color: #555;
+}
+
+.form-input {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #25e821;
+    box-shadow: 0 0 5px rgba(37, 232, 33, 0.5);
+}
+
+.form-input::placeholder {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.submit-btn {
+    background-color: #25e821;
+    color: white;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: center;
+}
+
+.submit-btn:hover {
+    background-color: #1cc117;
+    transform: scale(1.02);
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+
+/* Formulario de suscripción */
+.subscription-form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto 270px; /* Añadido margen superior para separar del contenido anterior */
+    padding: 30px;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-heading {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-heading::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #25e821;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+.plan-selection, .payment-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.listbox-label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.listbox-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.listbox-button:hover {
+    border-color: #25e821;
+    box-shadow: 0 0 5px rgba(37, 232, 33, 0.5);
+}
+
+.listbox-options {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.listbox-item {
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.listbox-item:hover {
+    background-color: #f1f1f1;
+}
+
+.form-fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.input-group {
+    flex: 1;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-label {
+    font-size: 14px;
+    color: #555;
+}
+
+.form-input {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #25e821;
+    box-shadow: 0 0 5px rgba(37, 232, 33, 0.5);
+}
+
+.submit-btn {
+    background-color: #25e821;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: center;
+}
+
+.submit-btn:hover {
+    background-color: #1cc117;
+    transform: scale(1.02);
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+}
+
+
+/* PROFILE PAGE */
+.user-profile {
+    display: flex;
+    width: 100%;
+    max-width: 1127px;
+    gap: 40px 50px;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+.profile-image {
+    aspect-ratio: 1.38;
+    object-fit: contain;
+    width: 88px;
+    align-self: start;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-grow: 1;
+    width: fit-content;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer {
+        flex-direction: row;
+        gap: 10px;
+    }
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .user-details-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .form-fields {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .methods-container {
+        padding: 10px;
+    }
+
+    .methods-nav {
+        flex-direction: column;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .method-card {
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+
+
+
+
+
+/* Seccion de metodos */
+.methods-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Search Bar */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Method Cards */
+.method-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.method-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.method-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.method-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.method-name {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+.method-description {
+    font-size: 14px;
+    color: #555;
+}
+
